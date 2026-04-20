@@ -2,10 +2,6 @@
 
 **Automated cost analysis and optimization for Azure subscriptions**
 
-![Cost Savings](https://img.shields.io/badge/Average_Savings-30--40%25-success)
-![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?logo=powershell&logoColor=white)
-
 ## Overview
 
 This toolkit helps reduce Azure costs by 20-40% through **automated scripts and Azure Portal-based optimization**. It combines PowerShell automation for analysis with manual Azure Portal tasks for implementation.
@@ -29,18 +25,18 @@ This toolkit helps reduce Azure costs by 20-40% through **automated scripts and 
 
 **Compute Optimization:**
 - VM right-sizing based on 30-day utilization metrics
-- Identify idle VMs (CPU < 5% for 7+ days)
-- Reserved Instance opportunities (40-60% savings)
+- Identify idle VMs
+- Reserved Instance opportunities
 - Auto-shutdown recommendations for dev/test environments
 
 **Storage Optimization:**
-- Orphaned disk detection (unattached disks costing $4-45/month each)
+- Orphaned disk detection 
 - Storage tier recommendations (Hot → Cool for infrequent data = 50% savings)
 - Snapshot retention policy analysis
 - Blob lifecycle management suggestions
 
 **Network Optimization:**
-- Unused public IP addresses ($4-6/month each)
+- Unused public IP addresses
 - Load Balancer rule consolidation opportunities
 - VNet peering cost analysis
 - Egress traffic optimization
@@ -114,7 +110,7 @@ azure-cost-optimization/
 ### Compute Resources
 - **Right-sizing VMs**: Analyze 30-day CPU/memory metrics
 - **Reserved Instances**: 1-year = 40% off, 3-year = 60% off
-- **Auto-shutdown**: Dev/test VMs outside business hours = ~60% savings
+- **Auto-shutdown**: Dev/test VMs outside business hours 
 
 ### Storage Resources
 - **Hot tier**: Frequently accessed data (default)
@@ -131,22 +127,7 @@ azure-cost-optimization/
 - **Align retention**: 7 days (dev), 30 days (prod), 90 days (compliance)
 - **Cool tier backups**: Long-term retention at 50% cost
 - **Incremental snapshots**: Only changed blocks = massive savings
-
-## Real-World Example
-
-**Client: E-Commerce Platform**
-
-### Before Optimization
-- Monthly cost: **$6,800**
-- 8x Standard_D4s_v3 VMs running 24/7
-- 600GB data in Hot storage tier
-- 12 orphaned Premium SSD disks
-- 8 unused public IP addresses
-- Daily backups for all environments
-
-### After Optimization
-- Monthly cost: **$4,200**
-- **Total savings: $2,600/month (38%)**
+- 
 
 **Implementation Method: Hybrid Approach (Scripts + Portal)**
 
@@ -367,35 +348,3 @@ Edit `config.json` to customize thresholds:
   "backup_retention_prod": 30
 }
 ```
-
-## Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-optimization`)
-3. Commit changes (`git commit -m 'Add new optimization check'`)
-4. Push to branch (`git push origin feature/amazing-optimization`)
-5. Open a Pull Request
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file
-
-## Support
-
-- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/azure-cost-optimization/issues)
-- **Questions**: Open a discussion or contact via Upwork
-
-## Certifications
-
-Built by an **AZ-104 certified Azure Administrator** with expertise in:
-- Azure Cost Management & Billing
-- Resource optimization strategies
-- FinOps best practices
-- Enterprise cost governance
-
----
-
-**Typical ROI**: 10-20x return on investment in first year  
-**Average Implementation Time**: 2-5 days  
-**Ongoing Monitoring**: Monthly reports with new recommendations
