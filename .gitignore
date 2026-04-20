@@ -1,0 +1,26 @@
+# PowerShell
+*.ps1xml
+*.psd1
+
+# Reports
+reports/*.html
+reports/*.json
+reports/*.csv
+
+# Logs
+*.log
+
+# Azure credentials
+.azure/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Config overrides
+config.local.json
