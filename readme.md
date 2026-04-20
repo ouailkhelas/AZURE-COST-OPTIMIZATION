@@ -84,26 +84,6 @@ Connect-AzAccount
 # Output: HTML report in ./reports/ folder
 ```
 
-## Project Structure
-
-```
-azure-cost-optimization/
-├── README.md
-├── scripts/
-│   ├── Analyze-AzureCosts.ps1       # Main analysis script
-│   ├── Get-OrphanedResources.ps1    # Find unused resources
-│   ├── Get-VMRightSizing.ps1        # VM optimization recommendations
-│   └── Export-CostReport.ps1        # Generate HTML reports
-├── templates/
-│   └── cost-report-template.html    # Report template
-├── examples/
-│   ├── sample-report.html           # Example output
-│   └── before-after-comparison.md   # Case study
-└── docs/
-    ├── INSTALLATION.md
-    ├── USAGE.md
-    └── FAQ.md
-```
 
 ## Key Optimization Areas
 
